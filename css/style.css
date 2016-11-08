@@ -1,0 +1,21 @@
+body {
+  font-size: 13px;
+  line-height: 24px;
+  color: black;
+  font-weight: regular;
+  font-family: PT Sans, sans-serif;
+}
+h2 {
+  font-size: 30px;
+  line-height: 24px;
+  color: black;
+  font-weight: regular;
+  font-family: Cuprum, sans-serif;
+}
+.descrip-service h2 {
+  font-size: 36px;
+  line-height: 24px;
+  color: #32425c;
+  font-weight: regular;
+  font-family: Cuprum, sans-serif;
+}
