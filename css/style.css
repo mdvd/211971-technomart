@@ -1,21 +1,503 @@
 body {
   font-size: 13px;
   line-height: 24px;
-  color: black;
-  font-weight: regular;
   font-family: PT Sans, sans-serif;
 }
 h2 {
   font-size: 30px;
   line-height: 24px;
-  color: black;
-  font-weight: regular;
   font-family: Cuprum, sans-serif;
 }
 .descrip-service h2 {
   font-size: 36px;
   line-height: 24px;
   color: #32425c;
-  font-weight: regular;
   font-family: Cuprum, sans-serif;
+}
+
+html,
+body {
+  min-width: 1122px;
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.top-header {
+  height: 42px;
+  background-color: rgba(41, 52, 73, 0.4);
+  font-size: 0;
+}
+
+.logo {
+  display: inline-block;
+  background-color: #ee3643;
+  text-align: center;
+  width: 220px;
+  height: 47px;
+  font-size: 24px;
+}
+
+.search {
+  display: inline-block;
+  width: 270px;
+}
+
+.bookmarks, .cart, .order {
+  display: inline-block;
+  width: 150px;
+  font-size: 13px;
+}
+
+.main-header {
+  height: 278px;
+  background-color: #f1f5f7;
+}
+
+.descrip-header {
+  margin-top: 50px;
+  width: 210px;
+  height: 70px;
+  margin-left: 53px;
+  margin-right: 50px;
+  float: left;
+}
+
+.descrip-header p {
+  margin: 0;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 23px;
+}
+
+.contacts-header {
+  margin-top: 40px;
+  margin-right: 20px;
+  width: 300px;
+  height: 80px;
+  float: left;
+}
+
+.account {
+  margin-top: 40px;
+  width: 300px;
+  height: 80px;
+  float: left;
+}
+
+.main-navigation {
+  float: left;
+  margin-top: 38px;
+  min-height: 60px;
+}
+
+.main-navigation li {
+  display: inline-block;
+}
+
+.material-offer {
+  width: 300px;
+  height: 123px;
+  background-color: #f6b22d;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.new {
+  float: right;
+}
+
+.tool-offer {
+  width: 300px;
+  height: 123px;
+  background-color: #4aafde;
+  float: left;
+  margin-bottom: 20px;
+}
+
+.technic-offer {
+  width: 300px;
+  height: 123px;
+  background-color: #cc79d1;
+  float: right;
+  margin-bottom: 20px;
+}
+
+.sale-offer {
+  width: 300px;
+  height: 123px;
+  background-color: #85d179;
+  float: right;
+  margin-bottom: 20px;
+}
+
+.ship-offer {
+  width: 300px;
+  height: 123px;
+  background-color: #f6b22d;
+  float: right;
+}
+
+.slider {
+  float: left;
+  width: 620px;
+  height: 266px;
+}
+
+.list-slider {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.offers {
+  margin-bottom: 52px;
+  margin-top: 60px;
+}
+
+.slide-2 {
+  display: none;
+}
+
+.header-popular {
+  margin-top: 20px;
+  height: 89px;
+  background-color: #f7f3ec;
+  margin-bottom: 20px;
+}
+
+.header-popular h2 {
+  margin: 0;
+  padding: 30px;
+  display: inline-block;
+}
+
+.all-popular {
+  display: block;
+  float: right;
+  margin-right: 24px;
+  margin-top: 25px;
+  width: 254px;
+  height: 39px;
+  background-color: #ee3643;
+}
+
+.container-popular {
+  font-size: 0;
+}
+
+.popular-item {
+  display: inline-block;
+  width: 220px;
+  height: 318px;
+  font-size: 13px;
+  vertical-align: top;
+  background-color: rgba(175, 175, 175, 0.3);
+}
+
+.container-popular a {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.container-popular a:nth-child(4n) {
+  margin-right: 0;
+}
+
+.brand {
+  display: inline-block;
+  vertical-align: top;
+  width: 220px;
+  height: 145px;
+  margin-bottom: 20px;
+}
+
+.service {
+  height: 522px;
+  background-color: #f1f5f7;
+  margin-top: 65px;
+  padding-top: 65px;
+}
+
+.service-header {
+  width: 400px;
+  height: 100px;
+}
+
+.nav-services {
+  margin-top: 73px;
+  width: 220px;
+  background-color: #ffffff;
+  padding-left: 20px;
+  float: left;
+}
+
+.nav-services li {
+  height: 60px;
+  list-style-type: none;
+}
+
+.descrip-service {
+  width: 620px;
+  min-height: 280px;
+  display: inline-block;
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 73px;
+  margin-left: 80px;
+}
+
+.descrip-service .ship {
+  min-height: 280px;
+  background-image: url("../img/ship.png");
+  background-repeat: no-repeat;
+  background-position: right 24px;
+}
+
+.ship p {
+  width: 275px;
+}
+
+.descrip-service .warranty {
+  min-height: 280px;
+  background-image: url("../img/warranty.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  display: none;
+}
+
+.warranty p {
+  width: 380px;
+}
+
+.descrip-service .credit {
+  min-height: 280px;
+  background-image: url("../img/credit.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  display: none;
+}
+
+.credit p {
+  width: 282px;
+}
+
+.descrip-service h2 {
+  margin-top: 0;
+}
+
+.about-company {
+  margin-top: 55px;
+  width: 540px;
+  height: 380px;
+  float: left;
+}
+
+.contact-company {
+  margin-top: 55px;
+  width: 300px;
+  height: 380px;
+  float: right;
+}
+
+.main-footer {
+  height: 193px;
+  background-color: rgba(50, 66, 92, 0.5);
+  font-size: 0;
+}
+
+.logo-footer {
+  display: inline-block;
+  background-color: #ee3643;
+  text-align: center;
+  width: 220px;
+  height: 68px;
+  font-size: 24px;
+}
+
+.nav-company-footer {
+  display: inline-block;
+  vertical-align: top;
+  width: 550px;
+  height: 68px;
+  margin: 0;
+  margin-left: 170px;
+  padding-left: 0;
+  font-size: 18px;
+  font-family: Cuprum, sans-serif;
+
+}
+
+.nav-company-footer li, .nav-items-footer li {
+  display: inline-block;
+}
+
+.contacts-footer {
+  margin-top: 30px;
+  width: 330px;
+  display: inline-block;
+  font-size: 18px;
+  font-family: Cuprum, sans-serif;
+}
+
+.nav-items-footer {
+  display: inline-block;
+  width: 540px;
+  vertical-align: top;
+  margin-left: 70px;
+  margin-top: 30px;
+  padding-left: 0;
+  font-size: 18px;
+  font-family: Cuprum, sans-serif;
+}
+
+.bottom-footer {
+  height: 107px;
+  background-color: rgba(41, 52, 73, 0.7);
+  font-size: 0;
+}
+
+.copyright {
+  width: 230px;
+  height: 40px;
+  display: inline-block;
+  line-height: 18px;
+  font-size: 16px;
+  font-family: Cuprum, sans-serif;
+  margin-top: 40px;
+}
+
+.social-footer {
+  width: 150px;
+  height: 52px;
+  display: inline-block;
+  margin-left: 160px;
+  font-size: 13px;
+  margin-top: 30px;
+}
+
+.feedback {
+  width: 140px;
+  height: 40px;
+  display: inline-block;
+  margin-left: 100px;
+  margin-top: 40px;
+  line-height: 18px;
+  font-size: 16px;
+  font-family: Cuprum, sans-serif;
+}
+
+.designed {
+  width: 140px;
+  height: 40px;
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: 40px;
+  line-height: 18px;
+  font-size: 16px;
+  font-family: Cuprum, sans-serif;
+}
+
+.breadcrumbs {
+  height: 20px;
+  margin-top: 20px;
+  margin-bottom: 19px;
+}
+
+.breadcrumbs li {
+  display: inline-block;
+}
+
+.main-title {
+  height: 61px;
+  background-color: #f2f6f8;
+  padding-top: 28px;
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+
+.main-title h1 {
+  margin: 0;
+  line-height: 30px;
+  font-size: 30px;
+  font-family: Cuprum, sans-serif;
+}
+
+.filter-block {
+  width: 220px;
+  float: left;
+  margin-right: 20px;
+}
+
+.sort {
+  width: 700px;
+  height: 38px;
+  float: left;
+  display: inline-block;
+  background-color: #f7f3ec;
+  margin-bottom: 20px;
+}
+
+.filter-sort {
+  display: inline-block;
+  margin: 0;
+}
+
+.filter-sort li {
+  display: inline-block;
+}
+
+.items {
+  float: right;
+  font-size: 0;
+  width: 700px;
+  margin-bottom: 33px;
+}
+
+.item {
+  display: inline-block;
+  margin-right: 20px;
+  width: 218px;
+  height: 318px;
+  font-size: 18px;
+  border: 1px solid #e5e5e5;
+  vertical-align: top;
+  margin-bottom: 20px;
+}
+
+.item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.page-items {
+  clear: both;
+  margin-left: 240px;
+  margin-bottom: 60px;
+}
+
+.about-perf {
+  height: 195px;
+  background-color: #f2f6f8;
+  padding-top: 65px;
+}
+
+.about-perf h2 {
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.about-perf p {
+  margin: 0;
 }
