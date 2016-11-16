@@ -61,7 +61,6 @@ body {
 }
 
 .main-header {
-  height: 278px;
   background-color: #f1f5f7;
 }
 
@@ -85,21 +84,18 @@ body {
   margin-top: 40px;
   margin-right: 20px;
   width: 300px;
-  height: 80px;
   float: left;
 }
 
 .account {
   margin-top: 40px;
   width: 300px;
-  height: 80px;
   float: left;
 }
 
 .main-navigation {
   float: left;
   margin-top: 38px;
-  min-height: 60px;
 }
 
 .main-navigation li {
@@ -173,24 +169,22 @@ body {
 
 .header-popular {
   margin-top: 20px;
-  height: 89px;
   background-color: #f7f3ec;
   margin-bottom: 20px;
 }
 
 .header-popular h2 {
   margin: 0;
-  padding: 30px;
+  padding: 32px 30px;
   display: inline-block;
 }
 
 .all-popular {
-  display: block;
   float: right;
   margin-right: 24px;
   margin-top: 25px;
   width: 254px;
-  height: 39px;
+  height: 38px;
   background-color: #ee3643;
 }
 
@@ -200,11 +194,11 @@ body {
 
 .popular-item {
   display: inline-block;
-  width: 220px;
+  width: 218px;
   height: 318px;
   font-size: 13px;
   vertical-align: top;
-  background-color: rgba(175, 175, 175, 0.3);
+  border: 1px solid #e5e5e5;
 }
 
 .container-popular a {
@@ -219,13 +213,47 @@ body {
 .brand {
   display: inline-block;
   vertical-align: top;
-  width: 220px;
-  height: 145px;
+  width: 218px;
+  height: 143px;
   margin-bottom: 20px;
+  border: 1px solid #e5e5e5;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.bosch-br {
+  background-image: url(../img/bosch-logo.jpg);
+}
+
+.makita-br {
+  background-image: url(../img/makita-logo.jpg);
+}
+
+.dewalt-br {
+  background-image: url(../img/dewalt-logo.jpg);
+}
+
+.interskol-br {
+  background-image: url(../img/interskol-logo.jpg);
+}
+
+.hitachi-br {
+  background-image: url(../img/hitachi-logo.jpg);
+}
+
+.lg-br {
+  background-image: url(../img/lg-logo.jpg);
+}
+
+.aeg-br {
+  background-image: url(../img/aeg-logo.jpg);
+}
+
+.metabo-br {
+  background-image: url(../img/metabo-logo.jpg);
 }
 
 .service {
-  height: 522px;
   background-color: #f1f5f7;
   margin-top: 65px;
   padding-top: 65px;
@@ -233,11 +261,14 @@ body {
 
 .service-header {
   width: 400px;
-  height: 100px;
+}
+
+.service-header h2 {
+  margin-top: 0;
 }
 
 .nav-services {
-  margin-top: 73px;
+  margin-top: 53px;
   width: 220px;
   background-color: #ffffff;
   padding-left: 20px;
@@ -251,16 +282,16 @@ body {
 
 .descrip-service {
   width: 620px;
-  min-height: 280px;
   display: inline-block;
   list-style-type: none;
   padding-left: 0;
   margin-top: 73px;
   margin-left: 80px;
+  margin-bottom: 0;
 }
 
 .descrip-service .ship {
-  min-height: 280px;
+  min-height: 262px; /*изображение обрезается снизу*/
   background-image: url("../img/ship.png");
   background-repeat: no-repeat;
   background-position: right 24px;
@@ -271,7 +302,7 @@ body {
 }
 
 .descrip-service .warranty {
-  min-height: 280px;
+  min-height: 262px; /*изображение обрезается снизу*/
   background-image: url("../img/warranty.png");
   background-repeat: no-repeat;
   background-position: right top;
@@ -283,7 +314,7 @@ body {
 }
 
 .descrip-service .credit {
-  min-height: 280px;
+  min-height: 275px; /*изображение обрезается снизу*/
   background-image: url("../img/credit.png");
   background-repeat: no-repeat;
   background-position: right top;
@@ -301,19 +332,17 @@ body {
 .about-company {
   margin-top: 55px;
   width: 540px;
-  height: 380px;
   float: left;
 }
 
 .contact-company {
   margin-top: 55px;
   width: 300px;
-  height: 380px;
+  margin-bottom: 80px;
   float: right;
 }
 
 .main-footer {
-  height: 193px;
   background-color: rgba(50, 66, 92, 0.5);
   font-size: 0;
 }
@@ -350,6 +379,7 @@ body {
   display: inline-block;
   font-size: 18px;
   font-family: Cuprum, sans-serif;
+  margin-bottom: 47px;
 }
 
 .nav-items-footer {
@@ -364,24 +394,22 @@ body {
 }
 
 .bottom-footer {
-  height: 107px;
   background-color: rgba(41, 52, 73, 0.7);
   font-size: 0;
 }
 
 .copyright {
   width: 230px;
-  height: 40px;
   display: inline-block;
   line-height: 18px;
   font-size: 16px;
   font-family: Cuprum, sans-serif;
   margin-top: 40px;
+  margin-bottom: 31px;
 }
 
 .social-footer {
   width: 150px;
-  height: 52px;
   display: inline-block;
   margin-left: 160px;
   font-size: 13px;
@@ -390,7 +418,6 @@ body {
 
 .feedback {
   width: 140px;
-  height: 40px;
   display: inline-block;
   margin-left: 100px;
   margin-top: 40px;
@@ -401,7 +428,6 @@ body {
 
 .designed {
   width: 140px;
-  height: 40px;
   display: inline-block;
   margin-left: 20px;
   margin-top: 40px;
@@ -411,9 +437,8 @@ body {
 }
 
 .breadcrumbs {
-  height: 20px;
   margin-top: 20px;
-  margin-bottom: 19px;
+  margin-bottom: 15px;
 }
 
 .breadcrumbs li {
@@ -445,7 +470,6 @@ body {
   width: 700px;
   height: 38px;
   float: left;
-  display: inline-block;
   background-color: #f7f3ec;
   margin-bottom: 20px;
 }
@@ -483,14 +507,14 @@ body {
 
 .page-items {
   clear: both;
-  margin-left: 240px;
   margin-bottom: 60px;
+  font-size: 13px;
 }
 
 .about-perf {
-  height: 195px;
   background-color: #f2f6f8;
   padding-top: 65px;
+  padding-bottom: 65px;
 }
 
 .about-perf h2 {
