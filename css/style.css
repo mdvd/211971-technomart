@@ -28,6 +28,11 @@ body {
   clear: both;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   width: 940px;
   margin: 0 auto;
@@ -137,6 +142,15 @@ body {
   line-height: 42px;
   font-family: Cuprum, Arial, sans-serif;
 }
+
+_:-ms-input-placeholder, :root .order {
+  width: 149px;
+}
+
+@-moz-document url-prefix() {
+ .order {width: 149px;}
+}
+
 
 .bookmarks .link-bookmarks {
   position: relative;
@@ -826,7 +840,7 @@ body {
   position: relative;
   display: inline-block;
   width: 218px;
-  height: 316px;
+  min-height: 316px;
   font-size: 13px;
   vertical-align: top;
   border: 1px solid #e5e5e5;
@@ -854,7 +868,7 @@ body {
   top: 0;
   left: 0;
   width: 218px;
-  height: 88px;
+  min-height: 88px;
   padding: 40px 0;
   background-color: #ffffff;
   z-index: 10;
@@ -1022,6 +1036,11 @@ body {
   box-shadow: 0 4px 10px 0 rgba(41, 52, 73, 0.5);
 }
 
+.brand img {
+  width: 218px;
+  height: 143px;
+}
+
 .popular-brands .brand:active img {
   opacity: 0.3;
 }
@@ -1159,6 +1178,10 @@ body {
   background-repeat: no-repeat;
   background-position: right top;
   display: none;
+}
+
+@-moz-document url-prefix() {
+ .descrip-service .credit {min-height: 267px;}
 }
 
 .credit p {
@@ -1527,7 +1550,7 @@ body {
 }
 
 .breadcrumbs li a {
-  padding: 0 18px;  
+  padding: 0 18px;
 }
 
 .breadcrumbs li:first-child a {
@@ -1649,6 +1672,7 @@ body {
 
 .price-controls input {
   width: 90px;
+  min-height: 38px;
   background-color: #f7f3ec;
   border: 0;
   padding: 0;
