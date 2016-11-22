@@ -1722,7 +1722,8 @@ margin-bottom: 67px;
   vertical-align: top;
 }
 
-.filter-items label {
+.filter-items label,
+.filter-items button {
   cursor: pointer;
 }
 
