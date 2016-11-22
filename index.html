@@ -325,5 +325,27 @@
         </section>
       </div>
     </footer>
+    <div class="modal-write">
+      <button class="modal-close" type="button" title="Закрыть">Закрыть</button>
+      <form>
+        <div class="modal-write-input">
+          <label for="modal-name">Ваше имя:</label>
+          <input id="modal-name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+        </div>
+        <div class="modal-write-input">
+          <label for="modal-email">Ваш e-mail:</label>
+          <input id="modal-email" type="email" name="email" placeholder="Для отправки ответа">
+        </div>
+        <div class="modal-write-input">
+          <label for="modal-message">Текст письма:</label>
+          <textarea id="modal-message" name="message" placeholder="В свободной форме"></textarea>
+        </div>
+        <button class="modal-send-btn" type="submit">Отправить</button>
+      </form>
+    </div>
+    <div class="modal-map">
+      <button class="modal-close" type="button" title="Закрыть">Закрыть</button>
+      <div id="yandex-map"></div>
+    </div>
   </body>
 </html>
