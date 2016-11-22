@@ -1722,6 +1722,10 @@ margin-bottom: 67px;
   vertical-align: top;
 }
 
+.filter-items label {
+  cursor: pointer;
+}
+
 .filter-items input[type="checkbox"],
 .filter-items input[type="radio"] {
   display: none;
