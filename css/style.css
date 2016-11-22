@@ -744,8 +744,8 @@ body {
   text-decoration: none;
 }
 
-#slide1:checked ~ .list-slider .ind-slide-1,
-#slide2:checked ~ .list-slider .ind-slide-2 {
+#slide1:checked ~ .ind-slide-1,
+#slide2:checked ~ .ind-slide-2 {
   background-color: #ee3643;
 }
 
