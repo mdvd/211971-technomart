@@ -450,6 +450,8 @@ body {
   display: table;
   clear: both;
   width: 927px;
+  margin: 0px;
+  padding: 0px;
   margin-bottom: 60px;
 }
 
@@ -1522,10 +1524,13 @@ body {
 
 .breadcrumbs li {
   display: inline-block;
-  padding: 0 18px;
 }
 
-.breadcrumbs li:first-child {
+.breadcrumbs li a {
+  padding: 0 18px;  
+}
+
+.breadcrumbs li:first-child a {
   padding-left: 0;
   padding-right: 14px;
 }
@@ -1584,7 +1589,7 @@ body {
   line-height: 38px;
 }
 
-.filter-items legend {
+.filter-items > span {
   font-size: 17px;
   font-weight: bold;
   line-height: 53px;
