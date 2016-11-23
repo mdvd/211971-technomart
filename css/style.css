@@ -84,7 +84,7 @@ img {
 }
 
 .search input {
-  width: 222px;
+  width: 221px;
   height: 40px;
   border-width: 0px;
   padding-left: 48px;
@@ -142,15 +142,6 @@ img {
   line-height: 42px;
   font-family: Cuprum, Arial, sans-serif;
 }
-
-_:-ms-input-placeholder, :root .order {
-  width: 149px;
-}
-
-@-moz-document url-prefix() {
- .order {width: 149px;}
-}
-
 
 .bookmarks .link-bookmarks {
   position: relative;
@@ -461,24 +452,27 @@ _:-ms-input-placeholder, :root .order {
 
 .main-navigation {
   position: relative;
-  display: table;
   clear: both;
-  width: 927px;
+  width: 940px;
   margin: 0px;
   padding: 0px;
   margin-bottom: 60px;
 }
 
+.main-navigation ul {
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+}
+
 .main-navigation li {
-  display: table-cell;
-  position: relative;
+  display: inline-block;
 }
 
 .main-navigation a {
   display: block;
-  position: relative;
-  width: 100%;
   height: 100%;
+  padding: 0 30px;
   background-color: #32425c;
   box-shadow: inset 0px -10px 0px -5px #293449;
   font-size: 17px;
@@ -486,15 +480,20 @@ _:-ms-input-placeholder, :root .order {
   color: #ffffff;
   font-family: Cuprum, Arial, sans-serif;
   text-decoration: none;
-  text-align: center;
 }
 
-.main-navigation .nav-padd-left {
-  padding-left: 15px;
+.nav-padd-left a {
+  padding-left: 51px;
+  padding-right: 34px;
 }
 
-.main-navigation .nav-padd-right {
-  padding-right: 13px;
+.nav-padd-right a {
+  padding-left: 33px;
+  padding-right: 54px;
+}
+
+_:-ms-input-placeholder, :root .nav-padd-right a {
+  padding-right: 52px;
 }
 
 .main-navigation a:hover {
@@ -568,9 +567,14 @@ _:-ms-input-placeholder, :root .order {
   width: 60px;
   height: 59px;
   background: url("../img/new.png") no-repeat;
+  top: -1px;
+  right: -1px;
+  z-index: 100;
+}
+
+.offer .new {
   top: 0;
   right: 0;
-  z-index: 100;
 }
 
 .material-offer::after {
@@ -921,7 +925,7 @@ _:-ms-input-placeholder, :root .order {
 }
 
 .catalog-item:hover {
-  border: 0px;
+  border: 1px solid rgba(229, 229, 229, 0);
   box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
@@ -1027,12 +1031,12 @@ _:-ms-input-placeholder, :root .order {
 }
 
 .popular-brands .brand:hover {
-  border: 0px;
+  border: 1px solid rgba(229, 229, 229, 0);
   box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
 .popular-brands .brand:active {
-  border: 0px;
+  border: 1px solid rgba(229, 229, 229, 0);
   box-shadow: 0 4px 10px 0 rgba(41, 52, 73, 0.5);
 }
 
