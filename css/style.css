@@ -834,6 +834,7 @@ _:-ms-input-placeholder, :root .nav-padd-right a {
 
 .all-popular {
   display: inline-block;
+  vertical-align: top;
   margin-left: 340px;
   margin-top: 25px;
   width: 253px;

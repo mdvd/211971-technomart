@@ -1,12 +1,55 @@
+
+// попап покупки
+var buylink = document.querySelectorAll(".buy-item");
+var buymodal = document.querySelector(".modal-buy");
+var buyclose = document.querySelector(".modal-buy .modal-close");
+var overlay = document.querySelector(".modal-overlay");
+var contshop = document.querySelector(".modal-buy-btn");
+
+for(i = 0; i < buylink.length; i++) {
+buylink[i].addEventListener("click", function(event) {
+  event.preventDefault();
+  buymodal.classList.add("modal-buy-show");
+  overlay.classList.add("modal-overlay-show");
+  });
+};
+
+buyclose.addEventListener("click", function(event) {
+  event.preventDefault();
+  buymodal.classList.remove("modal-buy-show");
+  overlay.classList.remove("modal-overlay-show");
+});
+
+contshop.addEventListener("click", function(event) {
+  event.preventDefault();
+  buymodal.classList.remove("modal-buy-show");
+  overlay.classList.remove("modal-overlay-show");
+});
+
+overlay.addEventListener("click", function(event) {
+  event.preventDefault();
+  buymodal.classList.remove("modal-buy-show");
+  overlay.classList.remove("modal-overlay-show");
+});
+
+window.addEventListener("keydown", function(event) {
+  if (event.keyCode === 27) {
+    if (buymodal.classList.contains("modal-buy-show")) {
+      buymodal.classList.remove("modal-buy-show");
+      overlay.classList.remove("modal-overlay-show");
+    };
+  };
+});
+
 // попап обратной связи
 var wrlink = document.querySelector(".write-company");
 var wrmodal = document.querySelector(".modal-write");
 var wrclose = document.querySelector(".modal-close");
 var overlay = document.querySelector(".modal-overlay");
-var form = wrmodal.querySelector("form");
-var wrname = wrmodal.querySelector("#modal-name");
-var wremail = wrmodal.querySelector("#modal-email");
-var wrmessage = wrmodal.querySelector("#modal-message");
+var form = document.querySelector(".modal-write form");
+var wrname = document.querySelector("#modal-name");
+var wremail = document.querySelector("#modal-email");
+var wrmessage = document.querySelector("#modal-message");
 var storagename = window.localStorage.getItem("wrname");
 var storageemail = window.localStorage.getItem("wremail");
 
