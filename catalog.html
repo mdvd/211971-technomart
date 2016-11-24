@@ -5,7 +5,7 @@
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i%7CPT+Sans:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="top-header">
@@ -35,6 +35,8 @@
           <span class="adress-header">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
         </div>
         <div class="account">
+          <a class="login  account-disabled" href="#" title="Войти"><span class="login-icon"></span>Войти</a>
+          <a class="sign-up  account-disabled" href="#" title="Регистрация">Регистрация</a>
           <div class="account-name">
             <a class="user" href="#">
               <span class="account-username">Равшан Джамшутович</span>
@@ -49,7 +51,7 @@
         <nav class="main-navigation">
           <ul>
             <li class="nav-padd-left">
-              <a href="#">Главная</a>
+              <a href="index.html">Главная</a>
             </li>
             <li>
               <a href="#">Компания</a>
@@ -293,7 +295,7 @@
     </div>
     <footer class="main-footer">
       <div class="container clearfix">
-        <a class="logo-footer" href="#">Техномарт</a>
+        <a class="logo-footer" href="index.html">Техномарт</a>
         <ul class="nav-company-footer">
           <li>
             <a href="#">Компания</a>
@@ -302,7 +304,7 @@
             <a href="#">Новости</a>
           </li>
           <li>
-            <a href="#">Каталог</a>
+            <a href="catalog.html">Каталог</a>
           </li>
           <li>
             <a href="#">Доставка</a>
@@ -357,5 +359,7 @@
         <button class="modal-buy-btn" type="button" title="Закрыть">Продолжить покупки</button>
       </div>
     </div>
+    <div class="modal-overlay"></div>
+    <script src="js/modal-buy.min.js"></script>
   </body>
 </html>

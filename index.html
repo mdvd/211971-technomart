@@ -5,7 +5,7 @@
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i%7CPT+Sans:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="top-header">
@@ -37,11 +37,21 @@
         <div class="account">
           <a class="login" href="#" title="Войти"><span class="login-icon"></span>Войти</a>
           <a class="sign-up" href="#" title="Регистрация">Регистрация</a>
+          <div class="account-name account-disabled">
+            <a class="user" href="#">
+              <span class="account-username">Равшан Джамшутович</span>
+            </a>
+            <a class="logout" href="#exit"></a>
+          </div>
+          <div class="account-link account-disabled">
+            <a href="#">Мои заказы</a> &bull;
+            <a href="#">Личный кабинет</a>
+          </div>
         </div>
         <nav class="main-navigation">
           <ul>
             <li class="nav-padd-left">
-              <a href="#">Главная</a>
+              <a href="index.html">Главная</a>
             </li>
             <li>
               <a href="#">Компания</a>
@@ -263,7 +273,7 @@
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами,
            заехав в наш офис:</p>
-        <a href="#">
+        <a class="map-link" href="#">
           <img src="img/map.jpg" width="300" height="158" alt="карта">
         </a>
         <a class="write-company" href="#">Заблудились? Напишите нам!</a>
@@ -271,7 +281,7 @@
     </div>
     <footer class="main-footer">
       <div class="container clearfix">
-        <a class="logo-footer" href="#">Техномарт</a>
+        <a class="logo-footer" href="index.html">Техномарт</a>
         <ul class="nav-company-footer">
           <li>
             <a href="#">Компания</a>
@@ -329,7 +339,7 @@
     </footer>
     <div class="modal-write">
       <button class="modal-close" type="button" title="Закрыть">Закрыть</button>
-      <form>
+      <form method="post">
         <div class="modal-write-input">
           <label for="modal-name">Ваше имя:</label>
           <input id="modal-name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
@@ -347,7 +357,18 @@
     </div>
     <div class="modal-map">
       <button class="modal-close" type="button" title="Закрыть">Закрыть</button>
-      <div id="yandex-map"></div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.2995517046994!2d30.322309483707347!3d59.93879419773452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1479915869804" width="940" height="446" style="border:0" allowfullscreen></iframe>
     </div>
+    <div class="modal-buy">
+      <button class="modal-close" type="button" title="Закрыть">Закрыть</button>
+      <p class="modal-buy-title">Товар добавлен в корзину!</p>
+      <div class="modal-btn-container">
+        <a class="modal-order-btn" href="#order">Оформить заказ</a>
+        <button class="modal-buy-btn" type="button" title="Закрыть">Продолжить покупки</button>
+      </div>
+    </div>
+    <div class="modal-overlay"></div>
+    <script src="js/modal.min.js"></script>
+    <script src="js/modal-buy.min.js"></script>
   </body>
 </html>
